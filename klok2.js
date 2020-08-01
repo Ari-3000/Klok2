@@ -1,4 +1,7 @@
 let s = 0; m = 0; h = 0;
+	var hVar = document.getElementById("hours");
+	var mVar = document.getElementById("minutes");
+	var sVar = document.getElementById("seconds");
 
 
 var minutes = 1000 * 60;
@@ -20,14 +23,14 @@ var y = g.getFullYear();    // year (YYYY)
 //document.write(t);
 //document.write(k);
 
-/*
 
+var monthDays
 
 var t2 = t - ((y - 1970) * years) - 182*days  - (n * days);//(k * (30 * days))
 //^ gotta fix math & 30 d months
 document.write(t2);
           // Arnold Schwarzenegger / best movie EVAR (not the dumb blockbuster it seems) / milliseconds into today
-*/
+
 //var x = Date(y, k, n, 0, 0, 0);
 //document.write(x);
 //t3 = t - x;
@@ -43,9 +46,6 @@ document.write(t2);
 
 			
 function seconds() {
-	var hVar = document.getElementById("hours");
-	var mVar = document.getElementById("minutes");
-	var sVar = document.getElementById("seconds");
 	if (s < 59) {
   		s++;
   		hVar.innerHTML = (h < 10 ? '0' : '') + h;
